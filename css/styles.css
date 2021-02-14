@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background-color: var(--Darkcyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    color: var(--Verydarkdesaturatedblue);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.wrapper{
+    padding: 25px 25px;
+    max-width: 1440px;
+    margin: 50% auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(325px,350px));
+    justify-content: center;
+    gap: 25px;
+}
+@media (min-width: 450px) {
+    .wrapper {
+        margin: 10% auto;
+    }
+    .grid{
+        display: flex;
+    }
+  }
+.grid-dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+:root{
+   --Darkcyan: hsl(185,75%,39%);
+   --Verydarkdesaturatedblue:hsl(229,23%,23%);
+   --Darkgrayishblue:hsl(227,10%,46%);
+   --Darkgray:hsl(0,0%,59%);
+   --Lightgray:#e8e8e8;
+}
+.patterns{
+    position: absolute;
+}
+.img-pattern-background-top{
+    top: -60%;
+    right: 50%;
+}
+.img-pattern-background-bottom{
+    bottom: -60%;
+    left: 50%;
+}
+.card{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    min-width: 325px;
+    max-width: 350px;
+}
+.card-cover{
+    background-image: url('../assets/img/bg-pattern-card.svg');
+    height: 150px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-profile-pic{
+    border: 5.5px solid white;
+    border-radius: 100px 100px;
+    margin-top: -50px;
+    background: white;
+}
+.card-info-name,.card-dashboard-numbers{
+    font-weight: 700;
+}
+.card-info-age,.card-dashboard-details{
+    font-weight: 400;
+    color: var(--Darkgrayishblue);
+}
+.card-info-country{
+    display: block;
+    color: var(--Darkgrayishblue);
+    padding: 15px 0;
+    font-size: 16px;
+}
+.card-dashboard{
+    border-top: 1px solid var(--Lightgray);
+    padding: 10px;
+}
+.card-dashboard-details{
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+}
