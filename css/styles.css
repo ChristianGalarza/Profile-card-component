@@ -60,7 +60,7 @@ body{
 }
 .card-cover{
     background-image: url('../assets/img/bg-pattern-card.svg');
-    height: 150px;
+    height: 100px;
     background-position: center center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
@@ -82,14 +82,15 @@ body{
     display: block;
     color: var(--Darkgrayishblue);
     padding: 15px 0;
-    font-size: 16px;
+    font-size: 15px;
 }
 .card-dashboard{
     border-top: 1px solid var(--Lightgray);
-    padding: 10px;
+    padding: 10px 0;
 }
 .card-dashboard-details{
     display: block;
-    font-size: 12px;
+    font-size: 10px;
     padding-top: 10px;
+    letter-spacing: 2px;
 }
