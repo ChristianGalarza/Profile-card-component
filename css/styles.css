@@ -81,7 +81,7 @@ body{
 .card-info-country{
     display: block;
     color: var(--Darkgrayishblue);
-    padding: 15px 0;
+    padding: 15px 0 0;
     font-size: 15px;
 }
 .card-dashboard{
